@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nombre del Negocio | Producto o Servicio Premium · Ciudad</title>
+  <meta name="description" content="Descripción de ejemplo para la plantilla. Tu mejor opción en productos y servicios de calidad.">
+  <meta name="keywords" content="plantilla, productos, servicios, ejemplo">
+  <meta property="og:title" content="Nombre del Negocio | Ejemplo">
+  <meta property="og:description" content="Descripción de ejemplo. Calidad garantizada.">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       LOADER
+  ══════════════════════════════════════════════════════ -->
+  <div id="loader" aria-hidden="true">
+    <div class="loader-bulb">
+      <i class="fa-regular fa-lightbulb"></i>
+    </div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+    <span class="loader-text">Cargando...</span>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVBAR
+  ══════════════════════════════════════════════════════ -->
+  <header id="navbar" role="banner">
+    <div class="container">
+      <div class="nav-inner">
+
+        <a href="#hero" class="nav-logo" aria-label="Mi Negocio — inicio">
+          <div class="nav-logo-icon" aria-hidden="true">
+            <i class="fa-regular fa-lightbulb"></i>
+          </div>
+          <div class="nav-logo-copy">
+            <span>Mi</span>
+            <span>Negocio</span>
+          </div>
+        </a>
+
+        <nav aria-label="Navegación principal">
+          <ul class="nav-links">
+            <li><a href="#why">Soluciones</a></li>
+            <li><a href="#ambientes">Sección 2</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#producto">Productos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contacto" class="btn-gold nav-cta" style="font-size:13px; padding:12px 26px;">
+          Solicitar Información
+        </a>
+
+        <button class="hamburger" id="hamburger"
+                aria-label="Abrir menú" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mob-menu" aria-label="Menú móvil">
+      <a href="#why">Soluciones</a>
+      <a href="#ambientes">Sección 2</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#producto">Productos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="#contacto">Solicitar Información →</a>
+    </div>
+  </header>
+
+  <!-- ══════════════════════════════════════════════════════
+       HERO
+  ══════════════════════════════════════════════════════ -->
+  <main>
+    <section id="hero" aria-labelledby="hero-heading">
+
+      <!-- Parallax background image (fixed) -->
+      <div class="hero-bg" aria-hidden="true"></div>
+      <!-- Dark overlays -->
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-vignette" aria-hidden="true"></div>
+      <!-- Grid texture -->
+      <div class="hero-grid" aria-hidden="true"></div>
+      <!-- Canvas particle orbs -->
+      <canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+      <!-- Light shafts -->
+      <div class="hero-rays" aria-hidden="true">
+        <div class="hero-ray r1"></div>
+        <div class="hero-ray r2"></div>
+        <div class="hero-ray r3"></div>
+        <div class="hero-ray r4"></div>
+        <div class="hero-ray r5"></div>
+      </div>
+      <!-- Film grain overlay -->
+      <div class="hero-grain" aria-hidden="true"></div>
+      <!-- One-shot scan reveal -->
+      <div class="hero-scanline" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-content">
+
+          <!-- Live badge -->
+          <div class="hero-badge" id="hero-badge" aria-hidden="true">
+            <div class="badge-dot"></div>
+            Producto · Diseño · Ciudad, Estado
+          </div>
+
+          <!-- Animated title -->
+          <h1 class="hero-title" id="hero-heading">
+            <span class="line"><span>Innovar</span></span>
+            <span class="line"><span>también es</span></span>
+            <span class="line"><span class="accent">crear.</span></span>
+          </h1>
+
+          <!-- Subtitle -->
+          <p class="hero-sub" id="hero-sub">
+            El servicio adecuado <strong>transforma negocios</strong>, resalta detalles y crea experiencias que inspiran. Tu mejor opción en productos y servicios de calidad.
+          </p>
+
+          <!-- CTAs -->
+          <div class="hero-ctas" id="hero-ctas">
+            <a href="#contacto" class="btn-gold">
+              Iniciar Proyecto
+              <i class="fa-solid fa-arrow-right" style="font-size:12px;"></i>
+            </a>
+            <a href="#ambientes" class="btn-outline">
+              <i class="fa-regular fa-lightbulb" style="font-size:15px; color:var(--gray);"></i>
+              Ver Soluciones
+            </a>
+          </div>
+
+          <!-- Trust bar -->
+          <div class="hero-trust" id="hero-trust" aria-label="Credenciales">
+            <div class="trust-item">
+              <i class="fa-solid fa-shield-halved"></i>
+              Calidad garantizada
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-bolt"></i>
+              Tecnología Avanzada
+            </div>
+            <div class="trust-divider" aria-hidden="true"></div>
+            <div class="trust-item">
+              <i class="fa-solid fa-location-dot"></i>
+              Ciudad, Estado
+            </div>
+          </div>
+
+        </div><!-- /.hero-content -->
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-cue" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-mouse-dot"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         MARQUEE
+    ══════════════════════════════════════════════════ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-inner" id="marquee"></div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         WHY — Features
+    ══════════════════════════════════════════════════ -->
+    <section id="why" aria-labelledby="why-heading">
+      <div class="container">
+
+        <div class="why-header">
+          <div class="reveal">
+            <div class="label">La diferencia</div>
+            <h2 class="why-quote" id="why-heading">
+              La diferencia no siempre está en lo obvio…
+              <em> muchas veces está en los detalles.</em>
+            </h2>
+          </div>
+          <p class="why-sub reveal d2">
+            Lorem ipsum dolor sit amet, combinamos tecnología de vanguardia con asesoría personalizada para transformar cualquier espacio en una experiencia única.
+          </p>
+        </div>
+
+        <div class="features-grid">
+
+          <div class="f-card reveal">
+            <div class="f-num" aria-hidden="true">01</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+            </div>
+            <h3>Servicio Decorativo</h3>
+            <p>Lorem ipsum resalta detalles y crea puntos focales únicos. El servicio bien diseñado se convierte en obra de arte.</p>
+          </div>
+
+          <div class="f-card reveal d1">
+            <div class="f-num" aria-hidden="true">02</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-house-chimney"></i>
+            </div>
+            <h3>Hogares y Negocios</h3>
+            <p>Lorem ipsum desde la calidez del hogar hasta la productividad de oficinas, comercios y más.</p>
+          </div>
+
+          <div class="f-card reveal d2">
+            <div class="f-num" aria-hidden="true">03</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-sliders"></i>
+            </div>
+            <h3>Soluciones Personalizadas</h3>
+            <p>Lorem ipsum cada espacio merece su propia experiencia. Diseñamos a la medida de tu visión.</p>
+          </div>
+
+          <div class="f-card reveal d3">
+            <div class="f-num" aria-hidden="true">04</div>
+            <div class="f-icon" aria-hidden="true">
+              <i class="fa-solid fa-shield-halved"></i>
+            </div>
+            <h3>Calidad Garantizada</h3>
+            <p>Lorem ipsum material de primer nivel. Tecnología segura, confiable y duradera con larga vida útil.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         AMBIENTES — Tipos de luz
+    ══════════════════════════════════════════════════ -->
+    <section id="ambientes" aria-labelledby="amb-heading">
+      <div class="container">
+
+        <div class="ambientes-top">
+          <div class="reveal">
+            <div class="label">Tipos de Solución</div>
+            <h2 class="section-title" id="amb-heading">
+              No todas las opciones<br>
+              <span class="gold">crean el mismo resultado</span>
+            </h2>
+            <p style="color:var(--gray); margin-top:16px; font-size:15.5px; max-width:440px; line-height:1.7;">
+              Elige la solución adecuada para cada espacio y propósito.
+            </p>
+          </div>
+          <div class="reveal d2">
+            <span class="ambiente-pill">¿Cuál usarías?</span>
+          </div>
+        </div>
+
+        <div class="ambientes-grid">
+
+          <!-- Luz Fría -->
+          <div class="amb-card reveal">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=1400&auto=format&fit=crop"
+              alt="Oficina iluminada con luz fría LED">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(59,130,246,0.15); border-color:rgba(96,165,250,0.4);"
+                   aria-hidden="true">
+                <i class="fa-regular fa-snowflake" style="color:#93c5fd;"></i>
+              </div>
+              <h3>Opción A</h3>
+              <p>Ideal para oficinas, espacios de trabajo que exigen máxima concentración.</p>
+              <div class="amb-temp">Variante A — Alto Rendimiento</div>
+            </div>
+          </div>
+
+          <!-- Luz Neutra -->
+          <div class="amb-card reveal d1">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?q=80&w=1400&auto=format&fit=crop"
+              alt="Sala con luz neutra LED">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(255,255,255,0.1); border-color:rgba(255,255,255,0.3);"
+                   aria-hidden="true">
+                <i class="fa-regular fa-sun" style="color:white;"></i>
+              </div>
+              <h3>Opción B</h3>
+              <p>Perfecta para áreas comunes y uso diario. Muestra los elementos de forma natural.</p>
+              <div class="amb-temp">Variante B — Balance Natural</div>
+            </div>
+          </div>
+
+          <!-- Luz Cálida -->
+          <div class="amb-card reveal d2">
+            <img class="amb-img"
+              src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&w=1400&auto=format&fit=crop"
+              alt="Recámara con luz cálida LED">
+            <div class="amb-overlay">
+              <div class="amb-icon-wrap"
+                   style="background:rgba(249,115,22,0.15); border-color:rgba(251,146,60,0.4);"
+                   aria-hidden="true">
+                <i class="fa-solid fa-lightbulb" style="color:#fdba74;"></i>
+              </div>
+              <h3>Opción C</h3>
+              <p>Brinda una sensación acogedora y relajante. Ideal para espacios de descanso.</p>
+              <div class="amb-temp">Variante C — Calidez y Confort</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PROCESO — How we work
+    ══════════════════════════════════════════════════ -->
+    <section id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+
+        <div class="proceso-header reveal">
+          <div class="label">Cómo trabajamos</div>
+          <h2 class="section-title" id="proceso-heading">
+            Simple, rápido y <span class="gold">profesional</span>
+          </h2>
+          <p>De la consulta a la entrega, acompañamos cada paso del proceso para garantizar el resultado perfecto.</p>
+        </div>
+
+        <div class="proceso-grid">
+
+          <div class="proceso-step reveal">
+            <div class="step-number">Paso 01</div>
+            <h3>Diagnóstico & Asesoría</h3>
+            <p>Analizamos el espacio, el uso y tus objetivos para recomendarte la solución ideal. Sin costo, sin compromiso.</p>
+          </div>
+
+          <div class="proceso-step reveal d1">
+            <div class="step-number">Paso 02</div>
+            <h3>Cotización a Medida</h3>
+            <p>Lorem ipsum propuesta detallada con especificaciones técnicas y precio transparente.</p>
+          </div>
+
+          <div class="proceso-step reveal d2">
+            <div class="step-number">Paso 03</div>
+            <h3>Entrega & Seguimiento</h3>
+            <p>Lorem ipsum entregamos o gestionamos la instalación con seguimiento post-venta.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         PRODUCTO ESTRELLA
+    ══════════════════════════════════════════════════ -->
+    <section id="producto" aria-labelledby="prod-heading">
+      <div class="container">
+        <div class="producto-wrap">
+
+          <!-- Info -->
+          <div class="reveal">
+            <div class="label">Producto Destacado</div>
+            <h2 class="section-title" id="prod-heading">
+              Solución para cada espacio<br>
+              <span class="gold">con eficiencia y estilo</span>
+            </h2>
+            <p class="producto-lead">
+              Lorem ipsum producto multipropósito de alto rendimiento. Tecnología de vanguardia, bajo consumo y larga vida útil.
+            </p>
+
+            <ul class="feature-rows" aria-label="Características del panel LED">
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-regular fa-sun"></i></div>
+                <div>
+                  <h4>Especificación A — Alto Rendimiento</h4>
+                  <p>Lorem ipsum luz potente y uniforme para cualquier espacio.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-leaf"></i></div>
+                <div>
+                  <h4>Eficiencia Avanzada</h4>
+                  <p>Lorem ipsum consumo optimizado. Ahorra en costos operativos.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-eye"></i></div>
+                <div>
+                  <h4>Calidad Premium — Estándar Alto</h4>
+                  <p>Lorem ipsum índice superior para colores naturales y reales.</p>
+                </div>
+              </li>
+              <li class="f-row">
+                <div class="f-row-icon" aria-hidden="true"><i class="fa-solid fa-wrench"></i></div>
+                <div>
+                  <h4>Múltiples Modos</h4>
+                  <p>Lorem ipsum versátil para cualquier configuración.</p>
+                </div>
+              </li>
+            </ul>
+
+            <div class="specs-bar" role="list" aria-label="Especificaciones técnicas">
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">Valor A</span>
+                <span class="spec-name">Especif. 1</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">&gt;XX</span>
+                <span class="spec-name">Parámetro</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">&gt;Y.Y</span>
+                <span class="spec-name">Factor</span>
+              </div>
+              <div class="spec-cell" role="listitem">
+                <span class="spec-val">00k h</span>
+                <span class="spec-name">Vida Útil</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Visual -->
+          <div class="reveal d2">
+            <div class="panel-scene">
+              <div class="led-panel-body"
+                   role="img" aria-label="Panel de alta eficiencia Mi Negocio">
+              </div>
+              <div class="p-badge pb-tl" aria-hidden="true">
+                <div class="p-badge-dot"></div>
+                Multipropósito — Varios modos
+              </div>
+              <div class="p-badge pb-br" aria-hidden="true">
+                <i class="fa-solid fa-bolt" style="color:var(--gold);"></i>
+                XXW / XXXW Equiv.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         STATS
+    ══════════════════════════════════════════════════ -->
+    <section id="stats" aria-label="Estadísticas clave">
+      <div class="container">
+        <div class="stats-grid reveal" role="list">
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="20000" data-suffix=" h"
+                 aria-label="20,000 horas">0</div>
+            <div class="stat-lbl">Vida útil<br>del producto</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="83" data-suffix="%"
+                 aria-label="83%">0</div>
+            <div class="stat-lbl">Porcentaje de<br>ahorro</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="4300" data-suffix=" lm"
+                 aria-label="4300 lúmenes">0</div>
+            <div class="stat-lbl">Rendimiento<br>máximo</div>
+          </div>
+
+          <div class="stat-cell" role="listitem">
+            <div class="stat-num"
+                 data-count="2" data-suffix=" modos"
+                 aria-label="2 modos">0</div>
+            <div class="stat-lbl">Modos<br>de uso</div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         SECTORES
+    ══════════════════════════════════════════════════ -->
+    <section id="sectores" aria-labelledby="sec-heading">
+      <div class="container">
+
+        <div class="sectores-hdr reveal">
+          <div class="label">Sectores</div>
+          <h2 class="section-title" id="sec-heading">
+            Ideal para <span class="gold">cada contexto</span>
+          </h2>
+          <p>Desde hogares hasta grandes corporativos, tenemos la solución perfecta.</p>
+        </div>
+
+        <div class="sectores-grid" role="list">
+          <div class="sector-card reveal" role="listitem">
+            <i class="fa-solid fa-building sector-icon" aria-hidden="true"></i>
+            <h3>Oficinas</h3>
+          </div>
+          <div class="sector-card reveal d1" role="listitem">
+            <i class="fa-solid fa-store sector-icon" aria-hidden="true"></i>
+            <h3>Comercios</h3>
+          </div>
+          <div class="sector-card reveal d2" role="listitem">
+            <i class="fa-solid fa-school sector-icon" aria-hidden="true"></i>
+            <h3>Escuelas</h3>
+          </div>
+          <div class="sector-card reveal d3" role="listitem">
+            <i class="fa-solid fa-hospital sector-icon" aria-hidden="true"></i>
+            <h3>Hospitales</h3>
+          </div>
+          <div class="sector-card reveal d4" role="listitem">
+            <i class="fa-solid fa-house sector-icon" aria-hidden="true"></i>
+            <h3>Hogares</h3>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         CONTACTO
+    ══════════════════════════════════════════════════ -->
+    <section id="contacto" aria-labelledby="contact-heading">
+      <div class="container">
+
+        <div class="contact-hdr reveal">
+          <div class="label">Contacto</div>
+          <h2 class="section-title" id="contact-heading">
+            Hablemos de <span class="gold">tu proyecto</span>
+          </h2>
+          <p>Solicita tu cotización gratuita. Te respondemos de inmediato.</p>
+        </div>
+
+        <div class="contact-box reveal">
+
+          <!-- Info panel -->
+          <div class="contact-info">
+            <h3>Atención Personalizada</h3>
+            <p class="ci-sub">Tu mejor opción en productos y servicios de calidad.</p>
+
+            <ul class="ci-list">
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Ubicación</h4>
+                  <p>Calle Ejemplo #100,<br>
+                     Col. Ejemplo, 00000<br>
+                     Ciudad, Estado.</p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>Teléfonos</h4>
+                  <p>
+                    <a href="tel:0000000000">000 000 0000</a><br>
+                    <a href="tel:0000000000">000 000 0000</a>
+                  </p>
+                </div>
+              </li>
+              <li class="ci-item">
+                <div class="ci-icon" aria-hidden="true">
+                  <i class="fa-brands fa-whatsapp"></i>
+                </div>
+                <div class="ci-body">
+                  <h4>WhatsApp</h4>
+                  <p>Escríbenos y cotizamos en minutos.</p>
+                  <a href="https://wa.me/520000000000" target="_blank"
+                     rel="noopener noreferrer" class="ci-wa-link">
+                    Abrir chat →
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div><!-- /.contact-info -->
+
+          <!-- Form -->
+          <div class="contact-form-wrap">
+            <h3>Solicitar Cotización</h3>
+            <form id="wa-form" novalidate>
+              <div class="form-row">
+                <div class="form-group">
+                  <label class="form-label" for="f-name">Nombre completo</label>
+                  <input type="text" id="f-name" class="form-control"
+                         placeholder="Ej. Nombre Apellido" required autocomplete="name">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="f-interest">¿Qué necesitas?</label>
+                  <select id="f-interest" class="form-control">
+                    <option>Cotización general</option>
+                    <option>Producto A</option>
+                    <option>Opción B</option>
+                    <option>Opción C</option>
+                    <option>Opción D</option>
+                    <option>Opción E</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="f-msg">Detalle del proyecto</label>
+                <textarea id="f-msg" class="form-control" rows="4" required
+                          placeholder="Describe el espacio, cantidad o cualquier detalle relevante…"></textarea>
+              </div>
+              <button type="submit" class="form-submit">
+                <i class="fa-brands fa-whatsapp"></i>
+                Enviar a WhatsApp
+              </button>
+              <p class="form-note">
+                Al enviar serás redirigido a WhatsApp para continuar la conversación.
+              </p>
+            </form>
+          </div>
+
+        </div><!-- /.contact-box -->
+      </div>
+    </section>
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <i class="fa-regular fa-lightbulb"></i>
+          <span>Mi Negocio.</span>
+        </div>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Mi Negocio. Todos los derechos reservados. Ciudad, Estado.
+        </p>
+        <div class="footer-socials">
+          <a href="https://www.instagram.com/hagase_la_luz01?igsh=YXl3aHFzOTFxM3hu"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="https://www.tiktok.com/@hgase.la.luz5?_r=1&_t=ZS-97OyJsDcH4i"
+             target="_blank" rel="noopener noreferrer"
+             class="footer-soc" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+          <a href="https://wa.me/520000000000" target="_blank"
+             rel="noopener noreferrer" class="footer-soc" aria-label="WhatsApp">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════════════════
+       FLOATING WHATSAPP
+  ══════════════════════════════════════════════════════ -->
+  <a href="https://wa.me/520000000000?text=Hola%2C%20visit%C3%A9%20su%20sitio%20web%20y%20me%20gustar%C3%ADa%20m%C3%A1s%20informaci%C3%B3n."
+     target="_blank" rel="noopener noreferrer"
+     class="wa-btn" aria-label="Contactar por WhatsApp">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Scripts -->
+  <script src="js/main.js" defer></script>
+</body>
+</html>
